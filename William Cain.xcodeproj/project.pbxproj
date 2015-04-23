@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C043BA81AE7479300422F58 /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C043BA71AE7479300422F58 /* SKNode+Extensions.swift */; };
+		0C043BAA1AE757F400422F58 /* UIGestureRecognizer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C043BA91AE757F400422F58 /* UIGestureRecognizer+Extensions.swift */; };
+		0C043BAD1AE8549000422F58 /* ExpandingBGNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C043BAC1AE8549000422F58 /* ExpandingBGNode.swift */; };
+		0C043BC01AE8AD0B00422F58 /* DSMultilineLabelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C043BBE1AE8AD0B00422F58 /* DSMultilineLabelNode.m */; };
 		0C5A80D31AE2AD74008B29D2 /* SpiralNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A80D21AE2AD74008B29D2 /* SpiralNode.swift */; };
 		0C5A80D51AE2AECB008B29D2 /* MenuSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A80D41AE2AECB008B29D2 /* MenuSprite.swift */; };
 		0C5A80D91AE2E80D008B29D2 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A80D81AE2E80D008B29D2 /* CGPoint+Extensions.swift */; };
@@ -31,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C043BA71AE7479300422F58 /* SKNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		0C043BA91AE757F400422F58 /* UIGestureRecognizer+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+Extensions.swift"; sourceTree = "<group>"; };
+		0C043BAC1AE8549000422F58 /* ExpandingBGNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandingBGNode.swift; sourceTree = "<group>"; };
+		0C043BBC1AE8AD0A00422F58 /* William Cain-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "William Cain-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C043BBD1AE8AD0B00422F58 /* DSMultilineLabelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSMultilineLabelNode.h; sourceTree = "<group>"; };
+		0C043BBE1AE8AD0B00422F58 /* DSMultilineLabelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSMultilineLabelNode.m; sourceTree = "<group>"; };
 		0C5A80D21AE2AD74008B29D2 /* SpiralNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiralNode.swift; sourceTree = "<group>"; };
 		0C5A80D41AE2AECB008B29D2 /* MenuSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSprite.swift; sourceTree = "<group>"; };
 		0C5A80D81AE2E80D008B29D2 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
@@ -66,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C043BC21AE8AD4300422F58 /* DSMultiLineLabelNode */ = {
+			isa = PBXGroup;
+			children = (
+				0C043BBD1AE8AD0B00422F58 /* DSMultilineLabelNode.h */,
+				0C043BBE1AE8AD0B00422F58 /* DSMultilineLabelNode.m */,
+			);
+			name = DSMultiLineLabelNode;
+			sourceTree = "<group>";
+		};
 		0C7329791AE2AB2B00F43B97 = {
 			isa = PBXGroup;
 			children = (
@@ -87,17 +106,22 @@
 		0C7329841AE2AB2B00F43B97 /* William Cain */ = {
 			isa = PBXGroup;
 			children = (
+				0C043BC21AE8AD4300422F58 /* DSMultiLineLabelNode */,
 				0C7329871AE2AB2B00F43B97 /* AppDelegate.swift */,
 				0C7329891AE2AB2B00F43B97 /* GameScene.sks */,
 				0C73298B1AE2AB2B00F43B97 /* GameScene.swift */,
+				0C043BA71AE7479300422F58 /* SKNode+Extensions.swift */,
 				0C5A80D81AE2E80D008B29D2 /* CGPoint+Extensions.swift */,
+				0C043BA91AE757F400422F58 /* UIGestureRecognizer+Extensions.swift */,
 				0C5A80D21AE2AD74008B29D2 /* SpiralNode.swift */,
+				0C043BAC1AE8549000422F58 /* ExpandingBGNode.swift */,
 				0C5A80D41AE2AECB008B29D2 /* MenuSprite.swift */,
 				0C73298D1AE2AB2B00F43B97 /* GameViewController.swift */,
 				0C73298F1AE2AB2B00F43B97 /* Main.storyboard */,
 				0C7329921AE2AB2B00F43B97 /* Images.xcassets */,
 				0C7329941AE2AB2B00F43B97 /* LaunchScreen.xib */,
 				0C7329851AE2AB2B00F43B97 /* Supporting Files */,
+				0C043BBC1AE8AD0A00422F58 /* William Cain-Bridging-Header.h */,
 			);
 			path = "William Cain";
 			sourceTree = "<group>";
@@ -176,6 +200,7 @@
 				TargetAttributes = {
 					0C7329811AE2AB2B00F43B97 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = BXMUF94FN2;
 					};
 					0C73299A1AE2AB2B00F43B97 = {
 						CreatedOnToolsVersion = 6.3;
@@ -228,12 +253,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C043BA81AE7479300422F58 /* SKNode+Extensions.swift in Sources */,
+				0C043BC01AE8AD0B00422F58 /* DSMultilineLabelNode.m in Sources */,
+				0C043BAD1AE8549000422F58 /* ExpandingBGNode.swift in Sources */,
 				0C5A80D31AE2AD74008B29D2 /* SpiralNode.swift in Sources */,
 				0C73298C1AE2AB2B00F43B97 /* GameScene.swift in Sources */,
 				0C73298E1AE2AB2B00F43B97 /* GameViewController.swift in Sources */,
 				0C7329881AE2AB2B00F43B97 /* AppDelegate.swift in Sources */,
 				0C5A80D91AE2E80D008B29D2 /* CGPoint+Extensions.swift in Sources */,
 				0C5A80D51AE2AECB008B29D2 /* MenuSprite.swift in Sources */,
+				0C043BAA1AE757F400422F58 /* UIGestureRecognizer+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +389,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "William Cain/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "William Cain/William Cain-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -370,9 +405,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "William Cain/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "William Cain/William Cain-Bridging-Header.h";
 			};
 			name = Release;
 		};
