@@ -37,6 +37,7 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
     var expandingBGNode: ExpandingBGNode?
     var titleNode: DSMultilineLabelNode?
     var descriptionNode: DSMultilineLabelNode?
+    var particleEmitter: SKEmitterNode?
     
     weak var currentPanHandler: SKNode?
     
@@ -82,11 +83,18 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
         setupPanGestureRecognizer()
         setupTapGestureRecognizer()
         
+        let center = CGPoint(x: CGRectGetMidX(frame), y:CGRectGetMidY(frame))
+        
         backgroundColor = SKColor(red: 1, green: 1, blue: 1, alpha: 1)
         
         spiral = SpiralNode()
         spiral!.position = CGPoint(x: CGRectGetMidX(frame), y: CGRectGetMidY(frame))
         addChild(spiral!)
+        
+        
+        particleEmitter = SKEmitterNode(fileNamed: "bgParticle")
+        particleEmitter!.position = center
+        addChild(particleEmitter!)
         
         cropNode = SKCropNode()
         cropNode!.zPosition = 2000
@@ -95,7 +103,6 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
         expandingBGNode = ExpandingBGNode()
         expandingBGNode?.hidden = true
         expandingBGNode?.zPosition = 1000
-        let center = CGPoint(x: CGRectGetMidX(frame), y:CGRectGetMidY(frame))
         expandingBGNode?.position = center
         expandingBGNode?.colorBlendFactor = 1
         cropNode!.maskNode = expandingBGNode!
@@ -267,10 +274,9 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
         
                 var childScale = CGFloat(maxScale) - relativeDist * 300.0
                 childScale = max(CGFloat(s), childScale)
-        
-                
+
                 child.setScale(childScale * CGFloat(0.0025))
-                
+
 //                if(child == selectedNode){
 //                    child.setScale(CGFloat(0.7))
 //                }
@@ -280,6 +286,7 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
             cropNode?.zPosition = selectedNode!.zPosition - 1
             expandingBGNode?.setScale(selectedNode!.xScale)
             expandingBGNode?.position = convertPoint(selectedNode!.position, fromNode: spiral!)
+            particleEmitter?.particleColor = selectedNode!.bgColor
         }
     }
     

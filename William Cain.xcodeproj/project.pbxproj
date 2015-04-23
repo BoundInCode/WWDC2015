@@ -22,6 +22,8 @@
 		0C7329931AE2AB2B00F43B97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7329921AE2AB2B00F43B97 /* Images.xcassets */; };
 		0C7329961AE2AB2B00F43B97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C7329941AE2AB2B00F43B97 /* LaunchScreen.xib */; };
 		0C7329A21AE2AB2B00F43B97 /* William_CainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7329A11AE2AB2B00F43B97 /* William_CainTests.swift */; };
+		0C73A4B11AE98FE500A7B89C /* bgParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0C73A4AF1AE98FE500A7B89C /* bgParticle.sks */; };
+		0C73A4B21AE98FE500A7B89C /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C73A4B01AE98FE500A7B89C /* bokeh.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		0C73299B1AE2AB2B00F43B97 /* William CainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "William CainTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7329A01AE2AB2B00F43B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C7329A11AE2AB2B00F43B97 /* William_CainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = William_CainTests.swift; sourceTree = "<group>"; };
+		0C73A4AF1AE98FE500A7B89C /* bgParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bgParticle.sks; sourceTree = "<group>"; };
+		0C73A4B01AE98FE500A7B89C /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				0C7329871AE2AB2B00F43B97 /* AppDelegate.swift */,
 				0C7329891AE2AB2B00F43B97 /* GameScene.sks */,
 				0C73298B1AE2AB2B00F43B97 /* GameScene.swift */,
+				0C73A4AF1AE98FE500A7B89C /* bgParticle.sks */,
+				0C73A4B01AE98FE500A7B89C /* bokeh.png */,
 				0C043BA71AE7479300422F58 /* SKNode+Extensions.swift */,
 				0C5A80D81AE2E80D008B29D2 /* CGPoint+Extensions.swift */,
 				0C043BA91AE757F400422F58 /* UIGestureRecognizer+Extensions.swift */,
@@ -232,10 +238,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C73A4B11AE98FE500A7B89C /* bgParticle.sks in Resources */,
 				0C7329961AE2AB2B00F43B97 /* LaunchScreen.xib in Resources */,
 				0C7329931AE2AB2B00F43B97 /* Images.xcassets in Resources */,
 				0C73298A1AE2AB2B00F43B97 /* GameScene.sks in Resources */,
 				0C7329911AE2AB2B00F43B97 /* Main.storyboard in Resources */,
+				0C73A4B21AE98FE500A7B89C /* bokeh.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
