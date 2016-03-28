@@ -269,7 +269,8 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
                 var maxOpacity: CGFloat = CGFloat(1.0 - relativeVel)
                 var opacity = maxOpacity - relativeDist
                 opacity = max(opacity, 0.8)
-                child.alpha = opacity
+//                child.alpha = opacity
+                child.alpha = 1.0
                 child.zPosition = 1000 - relativeDist
         
                 var childScale = CGFloat(maxScale) - relativeDist * 300.0
@@ -290,7 +291,7 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
         }
     }
     
-    override func nodesAtPoint(p: CGPoint) -> [AnyObject] {
+    override func nodesAtPoint(p: CGPoint) -> [SKNode] {
         var nodes = super.nodesAtPoint(p)
         nodes.append(self)
         return nodes
